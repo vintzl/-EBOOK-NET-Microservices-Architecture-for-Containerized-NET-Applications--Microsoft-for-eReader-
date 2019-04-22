@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>Unknown</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="page_styles.css" rel="stylesheet" type="text/css"/>
+</head>
+  <body class="calibre">
+<div id="id_Hlk481763469" style="height:0pt"></div><p class="block_5"><b class="calibre1">EDITION v2.2</b> </p>
+	<p class="block_6"><span class="text_">DOWNLOAD available at: </span><a href="https://aka.ms/microservicesebook" class="text_1">https://aka.ms/microservicesebook</a><span class="text_1"> </span><span class="text_"> </span></p>
+	<p class="block_5">PUBLISHED BY</p>
+	<p class="block_7">Microsoft Developer Division, .NET and Visual Studio product teams</p>
+	<p class="block_8">A division of Microsoft Corporation</p>
+	<p class="block_8">One Microsoft Way</p>
+	<p class="block_8">Redmond, Washington 98052-6399</p>
+	<p class="block_8">Copyright © 2019 by Microsoft Corporation</p>
+	<p class="block_8">All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.</p>
+	<p class="block_8">This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions and information expressed in this book, including URL and other Internet website references, may change without notice.</p>
+	<p class="block_7">Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.</p>
+	<p class="block_7">Microsoft and the trademarks listed at http://www.microsoft.com on the “Trademarks” webpage are trademarks of the Microsoft group of companies. </p>
+	<p class="block_8">Mac and macOS are trademarks of Apple Inc.</p>
+	<p class="block_8">The Docker whale logo is a registered trademark of Docker, Inc. Used by permission.</p>
+	<p class="block_8"><img src="images/Screen_Shot_2019-01-15_at_1.39.08_PM.png" alt="Image" class="calibre2"/>All other marks and logos are property of their respective owners.</p>
+	<p class="block_9">Contents </p>
+	<p class="block_10"><span class="text_2"></span><span id="id_toc" class="text_2"></span><a href="index_split_001.html#id_Toc534713500" class="calibre3"><span class="text_3">Introduction</span></a></p>
+	<p class="block_11"><a href="index_split_001.html#id_Toc534713501" class="calibre4"><span class="text_4">About this guide</span></a></p>
+	<p class="block_11"><a href="index_split_001.html#id_Toc534713502" class="calibre4"><span class="text_4">Version</span></a></p>
+	<p class="block_11"><a href="index_split_001.html#id_Toc534713503" class="calibre4"><span class="text_4">What this guide does not cover</span></a></p>
+	<p class="block_12"><a href="index_split_001.html#id_Toc534713504" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_11"><a href="index_split_001.html#id_Toc534713505" class="calibre4"><span class="text_4">Who should use this guide</span></a></p>
+	<p class="block_12"><a href="index_split_001.html#id_Toc534713506" class="calibre3"><span class="text_1">How to use this guide</span></a></p>
+	<p class="block_11"><a href="index_split_001.html#id_Toc534713507" class="calibre4"><span class="text_4">Related microservice and container-based reference application: eShopOnContainers</span></a></p>
+	<p class="block_11"><a href="index_split_001.html#id_Toc534713508" class="calibre4"><span class="text_4">Send us your feedback!</span></a></p>
+	<p class="block_10"><a href="index_split_002.html#id_Toc534713509" class="calibre3"><span class="text_3">Introduction to Containers and Docker</span></a></p>
+	<p class="block_13"><a href="index_split_002.html#id_Toc534713510" class="calibre4"><span class="text_4">What is Docker?</span></a></p>
+	<p class="block_11"><a href="index_split_002.html#id_Toc534713511" class="calibre4"><span class="text_4">Comparing Docker containers with virtual machines</span></a></p>
+	<p class="block_11"><a href="index_split_002.html#id_Toc534713512" class="calibre4"><span class="text_4">A simple analogy</span></a></p>
+	<p class="block_13"><a href="index_split_002.html#id_Toc534713513" class="calibre4"><span class="text_4">Docker terminology</span></a></p>
+	<p class="block_13"><a href="index_split_002.html#id_Toc534713514" class="calibre4"><span class="text_4">Docker containers, images, and registries</span></a></p>
+	<p class="block_10"><a href="index_split_003.html#id_Toc534713515" class="calibre3"><span class="text_3">Choosing Between .NET Core and .NET Framework for Docker Containers</span></a></p>
+	<p class="block_13"><a href="index_split_003.html#id_Toc534713516" class="calibre4"><span class="text_4">General guidance</span></a></p>
+	<p class="block_12"><a href="index_split_003.html#id_Toc534713517" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_003.html#id_Toc534713518" class="calibre4"><span class="text_4">When to choose .NET Core for Docker containers</span></a></p>
+	<p class="block_11"><a href="index_split_003.html#id_Toc534713519" class="calibre4"><span class="text_4">Developing and deploying cross platform</span></a></p>
+	<p class="block_11"><a href="index_split_003.html#id_Toc534713520" class="calibre4"><span class="text_4">Using containers for new (“green-field”) projects</span></a></p>
+	<p class="block_11"><a href="index_split_003.html#id_Toc534713521" class="calibre4"><span class="text_4">Creating and deploying microservices on containers</span></a></p>
+	<p class="block_11"><a href="index_split_003.html#id_Toc534713522" class="calibre4"><span class="text_4">Deploying high density in scalable systems</span></a></p>
+	<p class="block_13"><a href="index_split_003.html#id_Toc534713523" class="calibre4"><span class="text_4">When to choose .NET Framework for Docker containers</span></a></p>
+	<p class="block_11"><a href="index_split_003.html#id_Toc534713524" class="calibre4"><span class="text_4">Migrating existing applications directly to a Windows Server container</span></a></p>
+	<p class="block_11"><a href="index_split_003.html#id_Toc534713525" class="calibre4"><span class="text_4">Using third-party .NET libraries or NuGet packages not available for .NET Core</span></a></p>
+	<p class="block_11"><a href="index_split_003.html#id_Toc534713526" class="calibre4"><span class="text_4">Using .NET technologies not available for .NET Core</span></a></p>
+	<p class="block_11"><a href="index_split_003.html#id_Toc534713527" class="calibre4"><span class="text_4">Using a platform or API that does not support .NET Core</span></a></p>
+	<p class="block_12"><a href="index_split_003.html#id_Toc534713528" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_003.html#id_Toc534713529" class="calibre4"><span class="text_4">Decision table: .NET frameworks to use for Docker</span></a></p>
+	<p class="block_13"><a href="index_split_003.html#id_Toc534713530" class="calibre4"><span class="text_4">What OS to target with .NET containers</span></a></p>
+	<p class="block_13"><a href="index_split_003.html#id_Toc534713531" class="calibre4"><span class="text_4">Official .NET Docker images</span></a></p>
+	<p class="block_11"><a href="index_split_003.html#id_Toc534713532" class="calibre4"><span class="text_4">.NET Core and Docker image optimizations for development versus production</span></a></p>
+	<p class="block_12"><a href="index_split_003.html#id_Toc534713533" class="calibre3"><span class="text_1">During development and build</span></a></p>
+	<p class="block_12"><a href="index_split_003.html#id_Toc534713534" class="calibre3"><span class="text_1">In production</span></a></p>
+	<p class="block_10"><a href="index_split_004.html#id_Toc534713535" class="calibre3"><span class="text_3">Architecting container and microservice-based applications</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713536" class="calibre4"><span class="text_4">Container design principles</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713537" class="calibre4"><span class="text_4">Containerizing monolithic applications</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713538" class="calibre4"><span class="text_4">Deploying a monolithic application as a container</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713539" class="calibre4"><span class="text_4">Publishing a single-container-based application to Azure App Service</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713540" class="calibre4"><span class="text_4">State and data in Docker applications</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713541" class="calibre4"><span class="text_4">Service-oriented architecture</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713542" class="calibre4"><span class="text_4">Microservices architecture</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713543" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713544" class="calibre4"><span class="text_4">Data sovereignty per microservice</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713545" class="calibre4"><span class="text_4">The relationship between microservices and the Bounded Context pattern</span></a></p>
+	<p class="block_12"><a href="index_split_004.html#id_Toc534713546" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713547" class="calibre4"><span class="text_4">Logical architecture versus physical architecture</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713548" class="calibre4"><span class="text_4">Challenges and solutions for distributed data management</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713549" class="calibre4"><span class="text_4">Challenge #1: How to define the boundaries of each microservice</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713550" class="calibre4"><span class="text_4">Challenge #2: How to create queries that retrieve data from several microservices</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713551" class="calibre4"><span class="text_4">Challenge #3: How to achieve consistency across multiple microservices</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713552" class="calibre4"><span class="text_4">Challenge #4: How to design communication across microservice boundaries</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713553" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713554" class="calibre4"><span class="text_4">Identify domain-model boundaries for each microservice</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713555" class="calibre4"><span class="text_4">The API gateway pattern versus the Direct client-to-microservice communication</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713556" class="calibre4"><span class="text_4">Direct client-to-microservice communication</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713557" class="calibre4"><span class="text_4">Why consider API Gateways instead of direct client-to-microservice communication</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713558" class="calibre4"><span class="text_4">What is the API Gateway pattern?</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713559" class="calibre4"><span class="text_4">Main features in the API Gateway pattern</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713560" class="calibre4"><span class="text_4">Using products with API Gateway features</span></a></p>
+	<p class="block_12"><a href="index_split_004.html#id_Toc534713561" class="calibre3"><span class="text_1">Azure API Management</span></a></p>
+	<p class="block_12"><a href="index_split_004.html#id_Toc534713562" class="calibre3"><span class="text_1">Ocelot</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713563" class="calibre4"><span class="text_4">Drawbacks of the API Gateway pattern</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713564" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713565" class="calibre4"><span class="text_4">Communication in a microservice architecture</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713566" class="calibre4"><span class="text_4">Communication types</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713567" class="calibre4"><span class="text_4">Asynchronous microservice integration enforces microservice’s autonomy</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713568" class="calibre4"><span class="text_4">Communication styles</span></a></p>
+	<p class="block_12"><a href="index_split_004.html#id_Toc534713569" class="calibre3"><span class="text_1">Request/response communication with HTTP and REST</span></a></p>
+	<p class="block_12"><a href="index_split_004.html#id_Toc534713570" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_12"><a href="index_split_004.html#id_Toc534713571" class="calibre3"><span class="text_1">Push and real-time communication based on HTTP</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713572" class="calibre4"><span class="text_4">Asynchronous message-based communication</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713573" class="calibre4"><span class="text_4">Single-receiver message-based communication</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713574" class="calibre4"><span class="text_4">Multiple-receivers message-based communication</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713575" class="calibre4"><span class="text_4">Asynchronous event-driven communication</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713576" class="calibre4"><span class="text_4">A note about messaging technologies for production systems</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713577" class="calibre4"><span class="text_4">Resiliently publishing to the event bus</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713578" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713579" class="calibre4"><span class="text_4">Creating, evolving, and versioning microservice APIs and contracts</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713580" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713581" class="calibre4"><span class="text_4">Microservices addressability and the service registry</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713582" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713583" class="calibre4"><span class="text_4">Creating composite UI based on microservices</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713584" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713585" class="calibre4"><span class="text_4">Resiliency and high availability in microservices</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713586" class="calibre4"><span class="text_4">Health management and diagnostics in microservices</span></a></p>
+	<p class="block_12"><a href="index_split_004.html#id_Toc534713587" class="calibre3"><span class="text_1">Health checks</span></a></p>
+	<p class="block_12"><a href="index_split_004.html#id_Toc534713588" class="calibre3"><span class="text_1">Using diagnostics and logs event streams</span></a></p>
+	<p class="block_12"><a href="index_split_004.html#id_Toc534713589" class="calibre3"><span class="text_1">Orchestrators managing health and diagnostics information</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713590" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_004.html#id_Toc534713591" class="calibre4"><span class="text_4">Orchestrating microservices and multi-container applications for high scalability and availability</span></a></p>
+	<p class="block_11"><a href="index_split_004.html#id_Toc534713592" class="calibre4"><span class="text_4">Software platforms for container clustering, orchestration, and scheduling</span></a></p>
+	<p class="block_11"><a href="index_split_005.html#id_Toc534713593" class="calibre4"><span class="text_4">Using container-based orchestrators in Microsoft Azure</span></a></p>
+	<p class="block_11"><a href="index_split_005.html#id_Toc534713594" class="calibre4"><span class="text_4">Using Azure Kubernetes Service</span></a></p>
+	<p class="block_11"><a href="index_split_005.html#id_Toc534713595" class="calibre4"><span class="text_4">Development environment for Kubernetes</span></a></p>
+	<p class="block_11"><a href="index_split_005.html#id_Toc534713596" class="calibre4"><span class="text_4">Getting started with Azure Kubernetes Service (AKS)</span></a></p>
+	<p class="block_11"><a href="index_split_005.html#id_Toc534713597" class="calibre4"><span class="text_4">Deploying with Helm charts into Kubernetes clusters</span></a></p>
+	<p class="block_11"><a href="index_split_005.html#id_Toc534713598" class="calibre4"><span class="text_4">Use Azure Dev Spaces for your Kubernetes application lifecycle</span></a></p>
+	<p class="block_11"><a href="index_split_005.html#id_Toc534713599" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_005.html#id_Toc534713600" class="calibre4"><span class="text_4">Using Azure Service Fabric</span></a></p>
+	<p class="block_11"><a href="index_split_005.html#id_Toc534713601" class="calibre4"><span class="text_4">Service Fabric and containers</span></a></p>
+	<p class="block_11"><a href="index_split_005.html#id_Toc534713602" class="calibre4"><span class="text_4">Stateless versus stateful microservices</span></a></p>
+	<p class="block_11"><a href="index_split_005.html#id_Toc534713603" class="calibre4"><span class="text_4">Using Azure Service Fabric Mesh</span></a></p>
+	<p class="block_11"><a href="index_split_005.html#id_Toc534713604" class="calibre4"><span class="text_4">Choosing orchestrators in Azure</span></a></p>
+	<p class="block_10"><a href="index_split_006.html#id_Toc534713605" class="calibre3"><span class="text_3">Development Process for Docker-Based Applications</span></a></p>
+	<p class="block_11"><a href="index_split_006.html#id_Toc534713606" class="calibre4"><span class="text_4">Development environment for Docker apps</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713607" class="calibre3"><span class="text_1">Development tool choices: IDE or editor</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713608" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_11"><a href="index_split_006.html#id_Toc534713609" class="calibre4"><span class="text_4">.NET languages and frameworks for Docker containers</span></a></p>
+	<p class="block_13"><a href="index_split_006.html#id_Toc534713610" class="calibre4"><span class="text_4">Development workflow for Docker apps</span></a></p>
+	<p class="block_11"><a href="index_split_006.html#id_Toc534713611" class="calibre4"><span class="text_4">Workflow for developing Docker container-based applications</span></a></p>
+	<p class="block_11"><a class="calibre4"><span class="text_4">Step 1. Start coding and create your initial application or service baseline</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713613" class="calibre3"><span class="text_1">Set up your local environment with Visual Studio</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713614" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_11"><a class="calibre4"><span class="text_4">Step 2. Create a Dockerfile related to an existing .NET base image</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713616" class="calibre3"><span class="text_1">Using an existing official .NET Docker image</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713617" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713618" class="calibre3"><span class="text_1">Using multi-arch image repositories</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713619" class="calibre3"><span class="text_1">Multi-stage builds in Dockerfile</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713620" class="calibre3"><span class="text_1">Creating your base image from scratch</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713621" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_11"><a class="calibre4"><span class="text_4">Step 3. Create your custom Docker images and embed your application or service in them</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713623" class="calibre3"><span class="text_1">Creating Docker images with Visual Studio</span></a></p>
+	<p class="block_11"><a class="calibre4"><span class="text_4">Step 4. Define your services in docker-compose.yml when building a multi-container Docker application</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713625" class="calibre3"><span class="text_1">Working with docker-compose.yml in Visual Studio 2017</span></a></p>
+	<p class="block_11"><a class="calibre4"><span class="text_4">Step 5. Build and run your Docker application</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713627" class="calibre3"><span class="text_1">Option A: Running a single-container application</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713628" class="calibre3"><span class="text_1">Option B: Running a multi-container application</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713629" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713630" class="calibre3"><span class="text_1">A note about testing and deploying with orchestrators</span></a></p>
+	<p class="block_11"><a class="calibre4"><span class="text_4">Step 6. Test your Docker application using your local Docker host</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713632" class="calibre3"><span class="text_1">Testing and debugging containers with Visual Studio 2017</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713633" class="calibre3"><span class="text_1">Testing and debugging without Visual Studio</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713634" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_11"><a href="index_split_006.html#id_Toc534713635" class="calibre4"><span class="text_4">Simplified workflow when developing containers with Visual Studio</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713636" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_11"><a href="index_split_006.html#id_Toc534713637" class="calibre4"><span class="text_4">Using PowerShell commands in a Dockerfile to set up Windows Containers</span></a></p>
+	<p class="block_12"><a href="index_split_006.html#id_Toc534713638" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_10"><a href="index_split_007.html#id_Toc534713639" class="calibre3"><span class="text_3">Designing and Developing Multi-Container and Microservice-Based .NET Applications</span></a></p>
+	<p class="block_13"><a href="index_split_007.html#id_Toc534713640" class="calibre4"><span class="text_4">Designing a microservice-oriented application</span></a></p>
+	<p class="block_11"><a href="index_split_007.html#id_Toc534713641" class="calibre4"><span class="text_4">Application specifications</span></a></p>
+	<p class="block_11"><a href="index_split_007.html#id_Toc534713642" class="calibre4"><span class="text_4">Development team context</span></a></p>
+	<p class="block_11"><a href="index_split_007.html#id_Toc534713643" class="calibre4"><span class="text_4">Choosing an architecture</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713644" class="calibre3"><span class="text_1">eShopOnContainers: A reference application for .NET Core and microservices deployed using containers</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713645" class="calibre3"><span class="text_1">Data sovereignty per microservice</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713646" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_11"><a href="index_split_007.html#id_Toc534713647" class="calibre4"><span class="text_4">Benefits of a microservice-based solution</span></a></p>
+	<p class="block_11"><a href="index_split_007.html#id_Toc534713648" class="calibre4"><span class="text_4">Downsides of a microservice-based solution</span></a></p>
+	<p class="block_11"><a href="index_split_007.html#id_Toc534713649" class="calibre4"><span class="text_4">External versus internal architecture and design patterns</span></a></p>
+	<p class="block_11"><a href="index_split_007.html#id_Toc534713650" class="calibre4"><span class="text_4">The new world: multiple architectural patterns and polyglot microservices</span></a></p>
+	<p class="block_13"><a href="index_split_007.html#id_Toc534713651" class="calibre4"><span class="text_4">Creating a simple data-driven CRUD microservice</span></a></p>
+	<p class="block_11"><a href="index_split_007.html#id_Toc534713652" class="calibre4"><span class="text_4">Designing a simple CRUD microservice</span></a></p>
+	<p class="block_11"><a href="index_split_007.html#id_Toc534713653" class="calibre4"><span class="text_4">Implementing a simple CRUD microservice with ASP.NET Core</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713654" class="calibre3"><span class="text_1">Implementing CRUD Web API services with Entity Framework Core</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713655" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_11"><a href="index_split_007.html#id_Toc534713656" class="calibre4"><span class="text_4">The DB connection string and environment variables used by Docker containers</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713657" class="calibre3"><span class="text_1">Implementing versioning in ASP.NET Web APIs</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713658" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_11"><a href="index_split_007.html#id_Toc534713659" class="calibre4"><span class="text_4">Generating Swagger description metadata from your ASP.NET Core Web API</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713660" class="calibre3"><span class="text_1">Why use Swagger?</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713661" class="calibre3"><span class="text_1">How to automate API Swagger metadata generation with the Swashbuckle NuGet package</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713662" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_007.html#id_Toc534713663" class="calibre4"><span class="text_4">Defining your multi-container application with docker-compose.yml</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713664" class="calibre3"><span class="text_1">A simple Web Service API container</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713665" class="calibre3"><span class="text_1">Using docker-compose files to target multiple environments</span></a></p>
+	<p class="block_12"><a href="index_split_007.html#id_Toc534713666" class="calibre3"><span class="text_1">Using multiple docker-compose files to handle several environments</span></a></p>
+	<p class="block_12"><a href="index_split_008.html#id_Toc534713667" class="calibre3"><span class="text_1">Building optimized ASP.NET Core Docker images</span></a></p>
+	<p class="block_13"><a href="index_split_008.html#id_Toc534713668" class="calibre4"><span class="text_4">Using a database server running as a container</span></a></p>
+	<p class="block_12"><a href="index_split_008.html#id_Toc534713669" class="calibre3"><span class="text_1">SQL Server running as a container with a microservice-related database</span></a></p>
+	<p class="block_12"><a href="index_split_008.html#id_Toc534713670" class="calibre3"><span class="text_1">Seeding with test data on Web application startup</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713671" class="calibre3"><span class="text_1">EF Core InMemory database versus SQL Server running as a container</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713672" class="calibre3"><span class="text_1">Using a Redis cache service running in a container</span></a></p>
+	<p class="block_13"><a href="index_split_009.html#id_Toc534713673" class="calibre4"><span class="text_4">Implementing event-based communication between microservices (integration events)</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713674" class="calibre4"><span class="text_4">Using message brokers and services buses for production systems</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713675" class="calibre4"><span class="text_4">Integration events</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713676" class="calibre4"><span class="text_4">The event bus</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713677" class="calibre3"><span class="text_1">Observer pattern</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713678" class="calibre3"><span class="text_1">Publish/Subscribe (Pub/Sub) pattern</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713679" class="calibre3"><span class="text_1">The middleman or event bus</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713680" class="calibre3"><span class="text_1">Defining an event bus interface</span></a></p>
+	<p class="block_13"><a href="index_split_009.html#id_Toc534713681" class="calibre4"><span class="text_4">Implementing an event bus with RabbitMQ for the development or test environment</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713682" class="calibre4"><span class="text_4">Implementing a simple publish method with RabbitMQ</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713683" class="calibre4"><span class="text_4">Implementing the subscription code with the RabbitMQ API</span></a></p>
+	<p class="block_13"><a href="index_split_009.html#id_Toc534713684" class="calibre4"><span class="text_4">Subscribing to events</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713685" class="calibre4"><span class="text_4">Publishing events through the event bus</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713686" class="calibre3"><span class="text_1">Designing atomicity and resiliency when publishing to the event bus</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713687" class="calibre3"><span class="text_1">Implementing atomicity when publishing integration events through the event bus</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713688" class="calibre3"><span class="text_1">Receiving messages from subscriptions: event handlers in receiver microservices</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713689" class="calibre4"><span class="text_4">Idempotency in update message events</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713690" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713691" class="calibre4"><span class="text_4">Deduplicating integration event messages</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713692" class="calibre3"><span class="text_1">Deduplicating message events at the EventHandler level</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713693" class="calibre3"><span class="text_1">Deduplicating messages when using RabbitMQ</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713694" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_009.html#id_Toc534713695" class="calibre4"><span class="text_4">Testing ASP.NET Core services and web apps</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713696" class="calibre3"><span class="text_1">Implementing unit tests for ASP.NET Core Web APIs</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713697" class="calibre3"><span class="text_1">Implementing integration and functional tests for each microservice</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713698" class="calibre3"><span class="text_1">Implementing service tests on a multi-container application</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713699" class="calibre4"><span class="text_4">Testing in eShopOnContainers</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713700" class="calibre3"><span class="text_1">Additionl resources</span></a></p>
+	<p class="block_13"><a href="index_split_009.html#id_Toc534713701" class="calibre4"><span class="text_4">Implement background tasks in microservices with IHostedService and the BackgroundService class</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713702" class="calibre4"><span class="text_4">Registering hosted services in your WebHost or Host</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713703" class="calibre4"><span class="text_4">The IHostedService interface</span></a></p>
+	<p class="block_11"><a class="calibre4"><span class="text_4">Implementing IHostedService with a custom hosted service class deriving from the BackgroundService base class</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713705" class="calibre3"><span class="text_1">Summary class diagram</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713706" class="calibre3"><span class="text_1">Deployment considerations and takeaways</span></a></p>
+	<p class="block_13"><a href="index_split_009.html#id_Toc534713707" class="calibre4"><span class="text_4">Implement API Gateways with Ocelot</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713708" class="calibre4"><span class="text_4">Architect and design your API Gateways</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713709" class="calibre3"><span class="text_1">Sample microservices/containers to re-route through the API Gateways</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713710" class="calibre4"><span class="text_4">Implementing your API Gateways with Ocelot</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713711" class="calibre3"><span class="text_1">Using a single Docker container image to run multiple different API Gateway / BFF container types</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713712" class="calibre3"><span class="text_1">The Gateway aggregation pattern in eShopOnContainers</span></a></p>
+	<p class="block_12"><a href="index_split_009.html#id_Toc534713713" class="calibre3"><span class="text_1">Authentication and authorization in Ocelot API Gateways</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713714" class="calibre4"><span class="text_4">Using Kubernetes Ingress plus Ocelot API Gateways</span></a></p>
+	<p class="block_11"><a href="index_split_009.html#id_Toc534713715" class="calibre4"><span class="text_4">Additional cross-cutting features in an Ocelot API Gateway</span></a></p>
+	<p class="block_10"><a href="index_split_010.html#id_Toc534713716" class="calibre3"><span class="text_3">Tackle Business Complexity in a Microservice with DDD and CQRS Patterns</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713717" class="calibre4"><span class="text_4">Apply simplified CQRS and DDD patterns in a microservice</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713718" class="calibre4"><span class="text_4">Apply CQRS and CQS approaches in a DDD microservice in eShopOnContainers</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713719" class="calibre4"><span class="text_4">CQRS and DDD patterns are not top-level architectures</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713720" class="calibre4"><span class="text_4">Implement reads/queries in a CQRS microservice</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713721" class="calibre4"><span class="text_4">Use ViewModels specifically made for client apps, independent from domain model constraints</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713722" class="calibre4"><span class="text_4">Use Dapper as a micro ORM to perform queries</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713723" class="calibre4"><span class="text_4">Dynamic versus static ViewModels</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713724" class="calibre3"><span class="text_1">ViewModel as dynamic type</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713725" class="calibre3"><span class="text_1">ViewModel as predefined DTO classes</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713726" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713727" class="calibre4"><span class="text_4">Design a DDD-oriented microservice</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713728" class="calibre4"><span class="text_4">Keep the microservice context boundaries relatively small</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713729" class="calibre4"><span class="text_4">Layers in DDD microservices</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713730" class="calibre3"><span class="text_1">The domain model layer</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713731" class="calibre3"><span class="text_1">The application layer</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713732" class="calibre3"><span class="text_1">The infrastructure layer</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713733" class="calibre4"><span class="text_4">Design a microservice domain model</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713734" class="calibre4"><span class="text_4">The Domain Entity pattern</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713735" class="calibre3"><span class="text_1">Rich domain model versus anemic domain model</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713736" class="calibre3"><span class="text_1">The Value Object pattern</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713737" class="calibre3"><span class="text_1">The Aggregate pattern</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713738" class="calibre3"><span class="text_1">The Aggregate Root or Root Entity pattern</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713739" class="calibre4"><span class="text_4">Implement a microservice domain model with .NET Core</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713740" class="calibre4"><span class="text_4">Domain model structure in a custom .NET Standard Library</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713741" class="calibre4"><span class="text_4">Structure aggregates in a custom .NET Standard library</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713742" class="calibre4"><span class="text_4">Implement domain entities as POCO classes</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713743" class="calibre4"><span class="text_4">Encapsulate data in the Domain Entities</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713744" class="calibre3"><span class="text_1">Map properties with only get accessors to the fields in the database table</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713745" class="calibre3"><span class="text_1">Map fields without properties</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713746" class="calibre3"><span class="text_1">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713747" class="calibre4"><span class="text_4">Seedwork (reusable base classes and interfaces for your domain model)</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713748" class="calibre4"><span class="text_4">The custom Entity base class</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713749" class="calibre4"><span class="text_4">Repository contracts (interfaces) in the domain model layer</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713750" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713751" class="calibre4"><span class="text_4">Implement value objects</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713752" class="calibre4"><span class="text_4">Important characteristics of value objects</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713753" class="calibre4"><span class="text_4">Value object implementation in C#</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713754" class="calibre4"><span class="text_4">How to persist value objects in the database with EF Core 2.0</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713755" class="calibre3"><span class="text_1">Background and older approaches using EF Core 1.1</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713756" class="calibre4"><span class="text_4">Persist value objects as owned entity types in EF Core 2.0</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713757" class="calibre3"><span class="text_1">Additional details on owned entity types</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713758" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713759" class="calibre4"><span class="text_4">Use enumeration classes instead of enum types</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713760" class="calibre4"><span class="text_4">Implement an Enumeration base class</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713761" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713762" class="calibre4"><span class="text_4">Design validations in the domain model layer</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713763" class="calibre4"><span class="text_4">Implement validations in the domain model layer</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713764" class="calibre3"><span class="text_1">Validate conditions and throw exceptions</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713765" class="calibre3"><span class="text_1">Use validation attributes in the model based on data annotations</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713766" class="calibre3"><span class="text_1">Validate entities by implementing the Specification pattern and the Notification pattern</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713767" class="calibre3"><span class="text_1">Use deferred validation in the domain</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713768" class="calibre3"><span class="text_1">Two-step validation</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713769" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713770" class="calibre4"><span class="text_4">Client-side validation (validation in the presentation layers)</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713771" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713772" class="calibre3"><span class="text_1">Validation in Xamarin mobile apps</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713773" class="calibre3"><span class="text_1">Validation in ASP.NET Core apps</span></a></p>
+	<p class="block_12"><a href="index_split_010.html#id_Toc534713774" class="calibre3"><span class="text_1">Validation in SPA Web apps (Angular 2, TypeScript, JavaScript)</span></a></p>
+	<p class="block_13"><a href="index_split_010.html#id_Toc534713775" class="calibre4"><span class="text_4">Domain events: design and implementation</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713776" class="calibre4"><span class="text_4">What is a domain event?</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713777" class="calibre4"><span class="text_4">Domain events versus integration events</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713778" class="calibre4"><span class="text_4">Domain events as a preferred way to trigger side effects across multiple aggregates within the same domain</span></a></p>
+	<p class="block_11"><a href="index_split_010.html#id_Toc534713779" class="calibre4"><span class="text_4">Implement domain events</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713780" class="calibre3"><span class="text_1">Raise domain events</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713781" class="calibre3"><span class="text_1">Single transaction across aggregates versus eventual consistency across aggregates</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713782" class="calibre3"><span class="text_1">The domain event dispatcher: mapping from events to event handlers</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713783" class="calibre3"><span class="text_1">How to subscribe to domain events</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713784" class="calibre3"><span class="text_1">How to handle domain events</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713785" class="calibre4"><span class="text_4">Conclusions on domain events</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713786" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_011.html#id_Toc534713787" class="calibre4"><span class="text_4">Design the infrastructure persistence layer</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713788" class="calibre4"><span class="text_4">The Repository pattern</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713789" class="calibre3"><span class="text_1">Define one repository per aggregate</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713790" class="calibre3"><span class="text_1">Enforce one aggregate root per repository</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713791" class="calibre3"><span class="text_1">The Repository pattern makes it easier to test your application logic</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713792" class="calibre3"><span class="text_1">The difference between the Repository pattern and the legacy Data Access class (DAL class) pattern</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713793" class="calibre3"><span class="text_1">Repositories shouldn’t be mandatory</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713794" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713795" class="calibre3"><span class="text_1">Repository pattern</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713796" class="calibre3"><span class="text_1">Unit of Work pattern</span></a></p>
+	<p class="block_13"><a href="index_split_011.html#id_Toc534713797" class="calibre4"><span class="text_4">Implement the infrastructure persistence layer with Entity Framework Core</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713798" class="calibre4"><span class="text_4">Introduction to Entity Framework Core</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713799" class="calibre4"><span class="text_4">Infrastructure in Entity Framework Core from a DDD perspective</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713800" class="calibre4"><span class="text_4">Implement custom repositories with Entity Framework Core</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713801" class="calibre3"><span class="text_1">Methods to implement in a repository (updates or transactions versus queries)</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713802" class="calibre3"><span class="text_1">Using a custom repository versus using EF DbContext directly</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713803" class="calibre4"><span class="text_4">EF DbContext and IUnitOfWork instance lifetime in your IoC container</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713804" class="calibre4"><span class="text_4">The repository instance lifetime in your IoC container</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713805" class="calibre4"><span class="text_4">Table mapping</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713806" class="calibre3"><span class="text_1">Data Annotations versus Fluent API</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713807" class="calibre3"><span class="text_1">Fluent API and the OnModelCreating method</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713808" class="calibre3"><span class="text_1">The Hi/Lo algorithm in EF Core</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713809" class="calibre3"><span class="text_1">Map fields instead of properties</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713810" class="calibre3"><span class="text_1">Use shadow properties in EF Core, hidden at the infrastructure level</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713811" class="calibre4"><span class="text_4">Implement the Query Specification pattern</span></a></p>
+	<p class="block_13"><a href="index_split_011.html#id_Toc534713812" class="calibre4"><span class="text_4">Use NoSQL databases as a persistence infrastructure</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713813" class="calibre4"><span class="text_4">Introduction to Azure Cosmos DB and the native Cosmos DB API</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713814" class="calibre4"><span class="text_4">Implement .NET code targeting MongoDB and Azure Cosmos DB</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713815" class="calibre3"><span class="text_1">Use Azure Cosmos DB from .NET containers</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713816" class="calibre3"><span class="text_1">Use MongoDB API for local dev/test Linux/Windows containers plus Azure Cosmos DB</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713817" class="calibre3"><span class="text_1">Analyze your approach for production applications: MongoDB API vs. Cosmos DB API</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713818" class="calibre3"><span class="text_1">The code: Use MongoDB API in .NET Core applications</span></a></p>
+	<p class="block_13"><a href="index_split_011.html#id_Toc534713819" class="calibre4"><span class="text_4">Design the microservice application layer and Web API</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713820" class="calibre4"><span class="text_4">Use SOLID principles and Dependency Injection</span></a></p>
+	<p class="block_13"><a href="index_split_011.html#id_Toc534713821" class="calibre4"><span class="text_4">Implement the microservice application layer using the Web API</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713822" class="calibre4"><span class="text_4">Use Dependency Injection to inject infrastructure objects into your application layer</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713823" class="calibre3"><span class="text_1">Register the dependency implementation types and interfaces or abstractions</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713824" class="calibre4"><span class="text_4">Implement the Command and Command Handler patterns</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713825" class="calibre3"><span class="text_1">The command class</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713826" class="calibre3"><span class="text_1">The Command Handler class</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713827" class="calibre4"><span class="text_4">The Command process pipeline: how to trigger a command handler</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713828" class="calibre3"><span class="text_1">Use the Mediator pattern (in-memory) in the command pipeline</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713829" class="calibre3"><span class="text_1">Use message queues (out-of-proc) in the command’s pipeline</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713830" class="calibre4"><span class="text_4">Implement the command process pipeline with a mediator pattern (MediatR)</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713831" class="calibre3"><span class="text_1">Implement idempotent Commands</span></a></p>
+	<p class="block_12"><a href="index_split_011.html#id_Toc534713832" class="calibre3"><span class="text_1">Register the types used by MediatR</span></a></p>
+	<p class="block_11"><a href="index_split_011.html#id_Toc534713833" class="calibre4"><span class="text_4">Apply cross-cutting concerns when processing commands with the Behaviors in MediatR</span></a></p>
+	<p class="block_10"><a href="index_split_012.html#id_Toc534713834" class="calibre3"><span class="text_3">Implement Resilient Applications</span></a></p>
+	<p class="block_13"><a href="index_split_012.html#id_Toc534713835" class="calibre4"><span class="text_4">Handle partial failure</span></a></p>
+	<p class="block_13"><a href="index_split_012.html#id_Toc534713836" class="calibre4"><span class="text_4">Strategies to handle partial failure</span></a></p>
+	<p class="block_11"><a href="index_split_012.html#id_Toc534713837" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_012.html#id_Toc534713838" class="calibre4"><span class="text_4">Implement retries with exponential backoff</span></a></p>
+	<p class="block_13"><a href="index_split_012.html#id_Toc534713839" class="calibre4"><span class="text_4">Implement resilient Entity Framework Core SQL connections</span></a></p>
+	<p class="block_11"><a href="index_split_012.html#id_Toc534713840" class="calibre4"><span class="text_4">Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts</span></a></p>
+	<p class="block_11"><a href="index_split_012.html#id_Toc534713841" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_012.html#id_Toc534713842" class="calibre4"><span class="text_4">Explore custom HTTP call retries with exponential backoff</span></a></p>
+	<p class="block_13"><a href="index_split_012.html#id_Toc534713843" class="calibre4"><span class="text_4">Use HttpClientFactory to implement resilient HTTP requests</span></a></p>
+	<p class="block_11"><a href="index_split_012.html#id_Toc534713844" class="calibre4"><span class="text_4">Issues with the original HttpClient class available in .NET Core</span></a></p>
+	<p class="block_11"><a href="index_split_012.html#id_Toc534713845" class="calibre4"><span class="text_4">What is HttpClientFactory</span></a></p>
+	<p class="block_11"><a href="index_split_012.html#id_Toc534713846" class="calibre4"><span class="text_4">Multiple ways to use HttpClientFactory</span></a></p>
+	<p class="block_11"><a href="index_split_012.html#id_Toc534713847" class="calibre4"><span class="text_4">How to use Typed Clients with HttpClientFactory</span></a></p>
+	<p class="block_12"><a href="index_split_012.html#id_Toc534713848" class="calibre3"><span class="text_1">HttpClient lifetimes</span></a></p>
+	<p class="block_12"><a href="index_split_012.html#id_Toc534713849" class="calibre3"><span class="text_1">Implement your Typed Client classes that use the injected and configured HttpClient</span></a></p>
+	<p class="block_12"><a href="index_split_013.html#id_Toc534713850" class="calibre3"><span class="text_1">Use your Typed Client classes</span></a></p>
+	<p class="block_11"><a href="index_split_013.html#id_Toc534713851" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_013.html#id_Toc534713852" class="calibre4"><span class="text_4">Implement HTTP call retries with exponential backoff with HttpClientFactory and Polly policies</span></a></p>
+	<p class="block_11"><a href="index_split_013.html#id_Toc534713853" class="calibre4"><span class="text_4">Add a jitter strategy to the retry policy</span></a></p>
+	<p class="block_11"><a href="index_split_013.html#id_Toc534713854" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_013.html#id_Toc534713855" class="calibre4"><span class="text_4">Implement the Circuit Breaker pattern</span></a></p>
+	<p class="block_11"><a href="index_split_013.html#id_Toc534713856" class="calibre4"><span class="text_4">Implement Circuit Breaker pattern with HttpClientFactory and Polly</span></a></p>
+	<p class="block_11"><a href="index_split_013.html#id_Toc534713857" class="calibre4"><span class="text_4">Test Http retries and circuit breakers in eShopOnContainers</span></a></p>
+	<p class="block_12"><a href="index_split_013.html#id_Toc534713858" class="calibre3"><span class="text_1">Test the circuit breaker in eShopOnContainers</span></a></p>
+	<p class="block_11"><a href="index_split_014.html#id_Toc534713859" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_014.html#id_Toc534713860" class="calibre4"><span class="text_4">Health monitoring</span></a></p>
+	<p class="block_11"><a href="index_split_014.html#id_Toc534713861" class="calibre4"><span class="text_4">Implement health checks in ASP.NET Core services</span></a></p>
+	<p class="block_12"><a href="index_split_014.html#id_Toc534713862" class="calibre3"><span class="text_1">Use the HealthChecks feature in your back-end ASP.NET microservices</span></a></p>
+	<p class="block_12"><a href="index_split_014.html#id_Toc534713863" class="calibre3"><span class="text_1">HealthChecks implementation in eShopOnContainers</span></a></p>
+	<p class="block_12"><a href="index_split_014.html#id_Toc534713864" class="calibre3"><span class="text_1">Query your microservices to report about their health status</span></a></p>
+	<p class="block_11"><a href="index_split_014.html#id_Toc534713865" class="calibre4"><span class="text_4">Use watchdogs</span></a></p>
+	<p class="block_11"><a href="index_split_014.html#id_Toc534713866" class="calibre4"><span class="text_4">Health checks when using orchestrators</span></a></p>
+	<p class="block_11"><a href="index_split_014.html#id_Toc534713867" class="calibre4"><span class="text_4">Advanced monitoring: visualization, analysis, and alerts</span></a></p>
+	<p class="block_11"><a href="index_split_014.html#id_Toc534713868" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_10"><a href="index_split_015.html#id_Toc534713869" class="calibre3"><span class="text_3">Make secure .NET Microservices and Web Applications</span></a></p>
+	<p class="block_11"><a href="index_split_015.html#id_Toc534713870" class="calibre4"><span class="text_4">Implement authentication in .NET microservices and web applications</span></a></p>
+	<p class="block_12"><a href="index_split_015.html#id_Toc534713871" class="calibre3"><span class="text_1">Authenticate with ASP.NET Core Identity</span></a></p>
+	<p class="block_12"><a href="index_split_015.html#id_Toc534713872" class="calibre3"><span class="text_1">Authenticate with external providers</span></a></p>
+	<p class="block_12"><a href="index_split_015.html#id_Toc534713873" class="calibre3"><span class="text_1">Authenticate with bearer tokens</span></a></p>
+	<p class="block_12"><a href="index_split_015.html#id_Toc534713874" class="calibre3"><span class="text_1">Authenticate with an OpenID Connect or OAuth 2.0 Identity provider</span></a></p>
+	<p class="block_12"><a href="index_split_015.html#id_Toc534713875" class="calibre3"><span class="text_1">Issue security tokens from an ASP.NET Core service</span></a></p>
+	<p class="block_12"><a href="index_split_015.html#id_Toc534713876" class="calibre3"><span class="text_1">Consume security tokens</span></a></p>
+	<p class="block_11"><a href="index_split_015.html#id_Toc534713877" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_015.html#id_Toc534713878" class="calibre4"><span class="text_4">About authorization in .NET microservices and web applications</span></a></p>
+	<p class="block_11"><a href="index_split_015.html#id_Toc534713879" class="calibre4"><span class="text_4">Implement role-based authorization</span></a></p>
+	<p class="block_11"><a href="index_split_015.html#id_Toc534713880" class="calibre4"><span class="text_4">Implement policy-based authorization</span></a></p>
+	<p class="block_11"><a href="index_split_015.html#id_Toc534713881" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_13"><a href="index_split_015.html#id_Toc534713882" class="calibre4"><span class="text_4">Store application secrets safely during development</span></a></p>
+	<p class="block_11"><a href="index_split_015.html#id_Toc534713883" class="calibre4"><span class="text_4">Store secrets in environment variables</span></a></p>
+	<p class="block_11"><a href="index_split_015.html#id_Toc534713884" class="calibre4"><span class="text_4">Store secrets with the ASP.NET Core Secret Manager</span></a></p>
+	<p class="block_13"><a href="index_split_015.html#id_Toc534713885" class="calibre4"><span class="text_4">Use Azure Key Vault to protect secrets at production time</span></a></p>
+	<p class="block_11"><a href="index_split_015.html#id_Toc534713886" class="calibre4"><span class="text_4">Additional resources</span></a></p>
+	<p class="block_10"><a href="index_split_016.html#id_Toc534713887" class="calibre3"><span class="text_3">Key Takeaways</span></a></p>
+	<p class="block_14"></p>
+	<p class="block_15"> </p>
+	<p id="id_Toc474844834" class="block_15"> </p>
+	</body></html>

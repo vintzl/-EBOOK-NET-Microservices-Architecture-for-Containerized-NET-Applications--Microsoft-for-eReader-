@@ -1,0 +1,2301 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta content="711674aa-6d4d-4aa6-9ae7-8f102e4347df" name="dtb:uid"/>
+    <meta content="3" name="dtb:depth"/>
+    <meta content="calibre (3.26.1)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>(2.2) NET-Microservices-Architecture-for-Containerized-NET-Applications</text>
+  </docTitle>
+  <navMap>
+    <navPoint class="chapter" id="num_1" playOrder="1">
+      <navLabel>
+        <text>Introduction</text>
+      </navLabel>
+      <content src="index_split_001.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_2" playOrder="2">
+      <navLabel>
+        <text>About this guide</text>
+      </navLabel>
+      <content src="index_split_001.html#id_Toc534713501"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_3" playOrder="3">
+      <navLabel>
+        <text>Version</text>
+      </navLabel>
+      <content src="index_split_001.html#id_Toc534713502"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_4" playOrder="4">
+      <navLabel>
+        <text>What this guide does not cover</text>
+      </navLabel>
+      <content src="index_split_001.html#id_Toc534713503"/>
+      <navPoint class="chapter" id="num_5" playOrder="5">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_001.html#id_Toc534713504"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_6" playOrder="6">
+      <navLabel>
+        <text>Who should use this guide</text>
+      </navLabel>
+      <content src="index_split_001.html#id_Toc534713505"/>
+      <navPoint class="chapter" id="num_7" playOrder="7">
+        <navLabel>
+          <text>How to use this guide</text>
+        </navLabel>
+        <content src="index_split_001.html#id_Toc534713506"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_8" playOrder="8">
+      <navLabel>
+        <text>Related microservice and container-based reference application: eShopOnContainers</text>
+      </navLabel>
+      <content src="index_split_001.html#id_Toc534713507"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_9" playOrder="9">
+      <navLabel>
+        <text>Send us your feedback!</text>
+      </navLabel>
+      <content src="index_split_001.html#id_Toc534713508"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_10" playOrder="10">
+      <navLabel>
+        <text>Introduction to Containers and Docker</text>
+      </navLabel>
+      <content src="index_split_002.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_11" playOrder="11">
+      <navLabel>
+        <text>What is Docker?</text>
+      </navLabel>
+      <content src="index_split_002.html#id_Toc534713510"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_12" playOrder="12">
+      <navLabel>
+        <text>Comparing Docker containers with virtual machines</text>
+      </navLabel>
+      <content src="index_split_002.html#id_Toc534713511"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_13" playOrder="13">
+      <navLabel>
+        <text>A simple analogy</text>
+      </navLabel>
+      <content src="index_split_002.html#id_Toc534713512"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_14" playOrder="14">
+      <navLabel>
+        <text>Docker terminology</text>
+      </navLabel>
+      <content src="index_split_002.html#id_Toc534713513"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_15" playOrder="15">
+      <navLabel>
+        <text>Docker containers, images, and registries</text>
+      </navLabel>
+      <content src="index_split_002.html#id_Toc534713514"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_16" playOrder="16">
+      <navLabel>
+        <text>Choosing Between .NET Core and .NET Framework for Docker Containers</text>
+      </navLabel>
+      <content src="index_split_003.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_17" playOrder="17">
+      <navLabel>
+        <text>General guidance</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713516"/>
+      <navPoint class="chapter" id="num_18" playOrder="18">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_003.html#id_Toc534713517"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_19" playOrder="19">
+      <navLabel>
+        <text>When to choose .NET Core for Docker containers</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713518"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_20" playOrder="20">
+      <navLabel>
+        <text>Developing and deploying cross platform</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713519"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_21" playOrder="21">
+      <navLabel>
+        <text>Using containers for new (“green-field”) projects</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713520"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_22" playOrder="22">
+      <navLabel>
+        <text>Creating and deploying microservices on containers</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713521"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_23" playOrder="23">
+      <navLabel>
+        <text>Deploying high density in scalable systems</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713522"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_24" playOrder="24">
+      <navLabel>
+        <text>When to choose .NET Framework for Docker containers</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713523"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_25" playOrder="25">
+      <navLabel>
+        <text>Migrating existing applications directly to a Windows Server container</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713524"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_26" playOrder="26">
+      <navLabel>
+        <text>Using third-party .NET libraries or NuGet packages not available for .NET Core</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713525"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_27" playOrder="27">
+      <navLabel>
+        <text>Using .NET technologies not available for .NET Core</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713526"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_28" playOrder="28">
+      <navLabel>
+        <text>Using a platform or API that does not support .NET Core</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713527"/>
+      <navPoint class="chapter" id="num_29" playOrder="29">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_003.html#id_Toc534713528"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_30" playOrder="30">
+      <navLabel>
+        <text>Decision table: .NET frameworks to use for Docker</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713529"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_31" playOrder="31">
+      <navLabel>
+        <text>What OS to target with .NET containers</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713530"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_32" playOrder="32">
+      <navLabel>
+        <text>Official .NET Docker images</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713531"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_33" playOrder="33">
+      <navLabel>
+        <text>.NET Core and Docker image optimizations for development versus production</text>
+      </navLabel>
+      <content src="index_split_003.html#id_Toc534713532"/>
+      <navPoint class="chapter" id="num_34" playOrder="34">
+        <navLabel>
+          <text>During development and build</text>
+        </navLabel>
+        <content src="index_split_003.html#id_Toc534713533"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_35" playOrder="35">
+        <navLabel>
+          <text>In production</text>
+        </navLabel>
+        <content src="index_split_003.html#id_Toc534713534"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_36" playOrder="36">
+      <navLabel>
+        <text>Architecting container and microservice-based applications</text>
+      </navLabel>
+      <content src="index_split_004.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_37" playOrder="37">
+      <navLabel>
+        <text>Container design principles</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713536"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_38" playOrder="38">
+      <navLabel>
+        <text>Containerizing monolithic applications</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713537"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_39" playOrder="39">
+      <navLabel>
+        <text>Deploying a monolithic application as a container</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713538"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_40" playOrder="40">
+      <navLabel>
+        <text>Publishing a single-container-based application to Azure App Service</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713539"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_41" playOrder="41">
+      <navLabel>
+        <text>State and data in Docker applications</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713540"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_42" playOrder="42">
+      <navLabel>
+        <text>Service-oriented architecture</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713541"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_43" playOrder="43">
+      <navLabel>
+        <text>Microservices architecture</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713542"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_44" playOrder="44">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713543"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_45" playOrder="45">
+      <navLabel>
+        <text>Data sovereignty per microservice</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713544"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_46" playOrder="46">
+      <navLabel>
+        <text>The relationship between microservices and the Bounded Context pattern</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713545"/>
+      <navPoint class="chapter" id="num_47" playOrder="47">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_004.html#id_Toc534713546"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_48" playOrder="48">
+      <navLabel>
+        <text>Logical architecture versus physical architecture</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713547"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_49" playOrder="49">
+      <navLabel>
+        <text>Challenges and solutions for distributed data management</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713548"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_50" playOrder="50">
+      <navLabel>
+        <text>Challenge #1: How to define the boundaries of each microservice</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713549"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_51" playOrder="51">
+      <navLabel>
+        <text>Challenge #2: How to create queries that retrieve data from several microservices</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713550"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_52" playOrder="52">
+      <navLabel>
+        <text>Challenge #3: How to achieve consistency across multiple microservices</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713551"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_53" playOrder="53">
+      <navLabel>
+        <text>Challenge #4: How to design communication across microservice boundaries</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713552"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_54" playOrder="54">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713553"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_55" playOrder="55">
+      <navLabel>
+        <text>Identify domain-model boundaries for each microservice</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713554"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_56" playOrder="56">
+      <navLabel>
+        <text>The API gateway pattern versus the Direct client-to-microservice communication</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713555"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_57" playOrder="57">
+      <navLabel>
+        <text>Direct client-to-microservice communication</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713556"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_58" playOrder="58">
+      <navLabel>
+        <text>Why consider API Gateways instead of direct client-to-microservice communication</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713557"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_59" playOrder="59">
+      <navLabel>
+        <text>What is the API Gateway pattern?</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713558"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_60" playOrder="60">
+      <navLabel>
+        <text>Main features in the API Gateway pattern</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713559"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_61" playOrder="61">
+      <navLabel>
+        <text>Using products with API Gateway features</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713560"/>
+      <navPoint class="chapter" id="num_62" playOrder="62">
+        <navLabel>
+          <text>Azure API Management</text>
+        </navLabel>
+        <content src="index_split_004.html#id_Toc534713561"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_63" playOrder="63">
+        <navLabel>
+          <text>Ocelot</text>
+        </navLabel>
+        <content src="index_split_004.html#id_Toc534713562"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_64" playOrder="64">
+      <navLabel>
+        <text>Drawbacks of the API Gateway pattern</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713563"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_65" playOrder="65">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713564"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_66" playOrder="66">
+      <navLabel>
+        <text>Communication in a microservice architecture</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713565"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_67" playOrder="67">
+      <navLabel>
+        <text>Communication types</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713566"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_68" playOrder="68">
+      <navLabel>
+        <text>Asynchronous microservice integration enforces microservice’s autonomy</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713567"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_69" playOrder="69">
+      <navLabel>
+        <text>Communication styles</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713568"/>
+      <navPoint class="chapter" id="num_70" playOrder="70">
+        <navLabel>
+          <text>Request/response communication with HTTP and REST</text>
+        </navLabel>
+        <content src="index_split_004.html#id_Toc534713569"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_71" playOrder="71">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_004.html#id_Toc534713570"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_72" playOrder="72">
+        <navLabel>
+          <text>Push and real-time communication based on HTTP</text>
+        </navLabel>
+        <content src="index_split_004.html#id_Toc534713571"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_73" playOrder="73">
+      <navLabel>
+        <text>Asynchronous message-based communication</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713572"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_74" playOrder="74">
+      <navLabel>
+        <text>Single-receiver message-based communication</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713573"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_75" playOrder="75">
+      <navLabel>
+        <text>Multiple-receivers message-based communication</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713574"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_76" playOrder="76">
+      <navLabel>
+        <text>Asynchronous event-driven communication</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713575"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_77" playOrder="77">
+      <navLabel>
+        <text>A note about messaging technologies for production systems</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713576"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_78" playOrder="78">
+      <navLabel>
+        <text>Resiliently publishing to the event bus</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713577"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_79" playOrder="79">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713578"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_80" playOrder="80">
+      <navLabel>
+        <text>Creating, evolving, and versioning microservice APIs and contracts</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713579"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_81" playOrder="81">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713580"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_82" playOrder="82">
+      <navLabel>
+        <text>Microservices addressability and the service registry</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713581"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_83" playOrder="83">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713582"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_84" playOrder="84">
+      <navLabel>
+        <text>Creating composite UI based on microservices</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713583"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_85" playOrder="85">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713584"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_86" playOrder="86">
+      <navLabel>
+        <text>Resiliency and high availability in microservices</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713585"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_87" playOrder="87">
+      <navLabel>
+        <text>Health management and diagnostics in microservices</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713586"/>
+      <navPoint class="chapter" id="num_88" playOrder="88">
+        <navLabel>
+          <text>Health checks</text>
+        </navLabel>
+        <content src="index_split_004.html#id_Toc534713587"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_89" playOrder="89">
+        <navLabel>
+          <text>Using diagnostics and logs event streams</text>
+        </navLabel>
+        <content src="index_split_004.html#id_Toc534713588"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_90" playOrder="90">
+        <navLabel>
+          <text>Orchestrators managing health and diagnostics information</text>
+        </navLabel>
+        <content src="index_split_004.html#id_Toc534713589"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_91" playOrder="91">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713590"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_92" playOrder="92">
+      <navLabel>
+        <text>Orchestrating microservices and multi-container applications for high scalability and availability</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713591"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_93" playOrder="93">
+      <navLabel>
+        <text>Software platforms for container clustering, orchestration, and scheduling</text>
+      </navLabel>
+      <content src="index_split_004.html#id_Toc534713592"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_94" playOrder="94">
+      <navLabel>
+        <text>Using container-based orchestrators in Microsoft Azure</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713593"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_95" playOrder="95">
+      <navLabel>
+        <text>Using Azure Kubernetes Service</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713594"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_96" playOrder="96">
+      <navLabel>
+        <text>Development environment for Kubernetes</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713595"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_97" playOrder="97">
+      <navLabel>
+        <text>Getting started with Azure Kubernetes Service (AKS)</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713596"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_98" playOrder="98">
+      <navLabel>
+        <text>Deploying with Helm charts into Kubernetes clusters</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713597"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_99" playOrder="99">
+      <navLabel>
+        <text>Use Azure Dev Spaces for your Kubernetes application lifecycle</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713598"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_100" playOrder="100">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713599"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_101" playOrder="101">
+      <navLabel>
+        <text>Using Azure Service Fabric</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713600"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_102" playOrder="102">
+      <navLabel>
+        <text>Service Fabric and containers</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713601"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_103" playOrder="103">
+      <navLabel>
+        <text>Stateless versus stateful microservices</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713602"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_104" playOrder="104">
+      <navLabel>
+        <text>Using Azure Service Fabric Mesh</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713603"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_105" playOrder="105">
+      <navLabel>
+        <text>Choosing orchestrators in Azure</text>
+      </navLabel>
+      <content src="index_split_005.html#id_Toc534713604"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_106" playOrder="106">
+      <navLabel>
+        <text>Development Process for Docker-Based Applications</text>
+      </navLabel>
+      <content src="index_split_006.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_107" playOrder="107">
+      <navLabel>
+        <text>Development environment for Docker apps</text>
+      </navLabel>
+      <content src="index_split_006.html#id_Toc534713606"/>
+      <navPoint class="chapter" id="num_108" playOrder="108">
+        <navLabel>
+          <text>Development tool choices: IDE or editor</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713607"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_109" playOrder="109">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713608"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_110" playOrder="110">
+      <navLabel>
+        <text>.NET languages and frameworks for Docker containers</text>
+      </navLabel>
+      <content src="index_split_006.html#id_Toc534713609"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_111" playOrder="111">
+      <navLabel>
+        <text>Development workflow for Docker apps</text>
+      </navLabel>
+      <content src="index_split_006.html#id_Toc534713610"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_112" playOrder="112">
+      <navLabel>
+        <text>Workflow for developing Docker container-based applications</text>
+      </navLabel>
+      <content src="index_split_006.html#id_Toc534713611"/>
+      <navPoint class="chapter" id="num_113" playOrder="113">
+        <navLabel>
+          <text>Set up your local environment with Visual Studio</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713613"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_114" playOrder="114">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713614"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_115" playOrder="115">
+        <navLabel>
+          <text>Using an existing official .NET Docker image</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713616"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_116" playOrder="116">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713617"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_117" playOrder="117">
+        <navLabel>
+          <text>Using multi-arch image repositories</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713618"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_118" playOrder="118">
+        <navLabel>
+          <text>Multi-stage builds in Dockerfile</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713619"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_119" playOrder="119">
+        <navLabel>
+          <text>Creating your base image from scratch</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713620"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_120" playOrder="120">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713621"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_121" playOrder="121">
+        <navLabel>
+          <text>Creating Docker images with Visual Studio</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713623"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_122" playOrder="122">
+        <navLabel>
+          <text>Working with docker-compose.yml in Visual Studio 2017</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713625"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_123" playOrder="123">
+        <navLabel>
+          <text>Option A: Running a single-container application</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713627"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_124" playOrder="124">
+        <navLabel>
+          <text>Option B: Running a multi-container application</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713628"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_125" playOrder="125">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713629"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_126" playOrder="126">
+        <navLabel>
+          <text>A note about testing and deploying with orchestrators</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713630"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_127" playOrder="127">
+        <navLabel>
+          <text>Testing and debugging containers with Visual Studio 2017</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713632"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_128" playOrder="128">
+        <navLabel>
+          <text>Testing and debugging without Visual Studio</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713633"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_129" playOrder="129">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713634"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_130" playOrder="130">
+      <navLabel>
+        <text>Simplified workflow when developing containers with Visual Studio</text>
+      </navLabel>
+      <content src="index_split_006.html#id_Toc534713635"/>
+      <navPoint class="chapter" id="num_131" playOrder="131">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713636"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_132" playOrder="132">
+      <navLabel>
+        <text>Using PowerShell commands in a Dockerfile to set up Windows Containers</text>
+      </navLabel>
+      <content src="index_split_006.html#id_Toc534713637"/>
+      <navPoint class="chapter" id="num_133" playOrder="133">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_006.html#id_Toc534713638"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_134" playOrder="134">
+      <navLabel>
+        <text>Designing and Developing Multi-Container and Microservice-Based .NET Applications</text>
+      </navLabel>
+      <content src="index_split_007.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_135" playOrder="135">
+      <navLabel>
+        <text>Designing a microservice-oriented application</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713640"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_136" playOrder="136">
+      <navLabel>
+        <text>Application specifications</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713641"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_137" playOrder="137">
+      <navLabel>
+        <text>Development team context</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713642"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_138" playOrder="138">
+      <navLabel>
+        <text>Choosing an architecture</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713643"/>
+      <navPoint class="chapter" id="num_139" playOrder="139">
+        <navLabel>
+          <text>eShopOnContainers: A reference application for .NET Core and microservices deployed using containers</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713644"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_140" playOrder="140">
+        <navLabel>
+          <text>Data sovereignty per microservice</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713645"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_141" playOrder="141">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713646"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_142" playOrder="142">
+      <navLabel>
+        <text>Benefits of a microservice-based solution</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713647"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_143" playOrder="143">
+      <navLabel>
+        <text>Downsides of a microservice-based solution</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713648"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_144" playOrder="144">
+      <navLabel>
+        <text>External versus internal architecture and design patterns</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713649"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_145" playOrder="145">
+      <navLabel>
+        <text>The new world: multiple architectural patterns and polyglot microservices</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713650"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_146" playOrder="146">
+      <navLabel>
+        <text>Creating a simple data-driven CRUD microservice</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713651"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_147" playOrder="147">
+      <navLabel>
+        <text>Designing a simple CRUD microservice</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713652"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_148" playOrder="148">
+      <navLabel>
+        <text>Implementing a simple CRUD microservice with ASP.NET Core</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713653"/>
+      <navPoint class="chapter" id="num_149" playOrder="149">
+        <navLabel>
+          <text>Implementing CRUD Web API services with Entity Framework Core</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713654"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_150" playOrder="150">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713655"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_151" playOrder="151">
+      <navLabel>
+        <text>The DB connection string and environment variables used by Docker containers</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713656"/>
+      <navPoint class="chapter" id="num_152" playOrder="152">
+        <navLabel>
+          <text>Implementing versioning in ASP.NET Web APIs</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713657"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_153" playOrder="153">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713658"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_154" playOrder="154">
+      <navLabel>
+        <text>Generating Swagger description metadata from your ASP.NET Core Web API</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713659"/>
+      <navPoint class="chapter" id="num_155" playOrder="155">
+        <navLabel>
+          <text>Why use Swagger?</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713660"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_156" playOrder="156">
+        <navLabel>
+          <text>How to automate API Swagger metadata generation with the Swashbuckle NuGet package</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713661"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_157" playOrder="157">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713662"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_158" playOrder="158">
+      <navLabel>
+        <text>Defining your multi-container application with docker-compose.yml</text>
+      </navLabel>
+      <content src="index_split_007.html#id_Toc534713663"/>
+      <navPoint class="chapter" id="num_159" playOrder="159">
+        <navLabel>
+          <text>A simple Web Service API container</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713664"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_160" playOrder="160">
+        <navLabel>
+          <text>Using docker-compose files to target multiple environments</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713665"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_161" playOrder="161">
+        <navLabel>
+          <text>Using multiple docker-compose files to handle several environments</text>
+        </navLabel>
+        <content src="index_split_007.html#id_Toc534713666"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_162" playOrder="162">
+        <navLabel>
+          <text>Building optimized ASP.NET Core Docker images</text>
+        </navLabel>
+        <content src="index_split_008.html#id_Toc534713667"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_163" playOrder="163">
+      <navLabel>
+        <text>Using a database server running as a container</text>
+      </navLabel>
+      <content src="index_split_008.html#id_Toc534713668"/>
+      <navPoint class="chapter" id="num_164" playOrder="164">
+        <navLabel>
+          <text>SQL Server running as a container with a microservice-related database</text>
+        </navLabel>
+        <content src="index_split_008.html#id_Toc534713669"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_165" playOrder="165">
+        <navLabel>
+          <text>Seeding with test data on Web application startup</text>
+        </navLabel>
+        <content src="index_split_008.html#id_Toc534713670"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_166" playOrder="166">
+        <navLabel>
+          <text>EF Core InMemory database versus SQL Server running as a container</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713671"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_167" playOrder="167">
+        <navLabel>
+          <text>Using a Redis cache service running in a container</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713672"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_168" playOrder="168">
+      <navLabel>
+        <text>Implementing event-based communication between microservices (integration events)</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713673"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_169" playOrder="169">
+      <navLabel>
+        <text>Using message brokers and services buses for production systems</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713674"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_170" playOrder="170">
+      <navLabel>
+        <text>Integration events</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713675"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_171" playOrder="171">
+      <navLabel>
+        <text>The event bus</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713676"/>
+      <navPoint class="chapter" id="num_172" playOrder="172">
+        <navLabel>
+          <text>Observer pattern</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713677"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_173" playOrder="173">
+        <navLabel>
+          <text>Publish/Subscribe (Pub/Sub) pattern</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713678"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_174" playOrder="174">
+        <navLabel>
+          <text>The middleman or event bus</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713679"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_175" playOrder="175">
+        <navLabel>
+          <text>Defining an event bus interface</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713680"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_176" playOrder="176">
+      <navLabel>
+        <text>Implementing an event bus with RabbitMQ for the development or test environment</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713681"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_177" playOrder="177">
+      <navLabel>
+        <text>Implementing a simple publish method with RabbitMQ</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713682"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_178" playOrder="178">
+      <navLabel>
+        <text>Implementing the subscription code with the RabbitMQ API</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713683"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_179" playOrder="179">
+      <navLabel>
+        <text>Subscribing to events</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713684"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_180" playOrder="180">
+      <navLabel>
+        <text>Publishing events through the event bus</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713685"/>
+      <navPoint class="chapter" id="num_181" playOrder="181">
+        <navLabel>
+          <text>Designing atomicity and resiliency when publishing to the event bus</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713686"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_182" playOrder="182">
+        <navLabel>
+          <text>Implementing atomicity when publishing integration events through the event bus</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713687"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_183" playOrder="183">
+        <navLabel>
+          <text>Receiving messages from subscriptions: event handlers in receiver microservices</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713688"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_184" playOrder="184">
+      <navLabel>
+        <text>Idempotency in update message events</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713689"/>
+      <navPoint class="chapter" id="num_185" playOrder="185">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713690"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_186" playOrder="186">
+      <navLabel>
+        <text>Deduplicating integration event messages</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713691"/>
+      <navPoint class="chapter" id="num_187" playOrder="187">
+        <navLabel>
+          <text>Deduplicating message events at the EventHandler level</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713692"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_188" playOrder="188">
+        <navLabel>
+          <text>Deduplicating messages when using RabbitMQ</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713693"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_189" playOrder="189">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713694"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_190" playOrder="190">
+      <navLabel>
+        <text>Testing ASP.NET Core services and web apps</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713695"/>
+      <navPoint class="chapter" id="num_191" playOrder="191">
+        <navLabel>
+          <text>Implementing unit tests for ASP.NET Core Web APIs</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713696"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_192" playOrder="192">
+        <navLabel>
+          <text>Implementing integration and functional tests for each microservice</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713697"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_193" playOrder="193">
+        <navLabel>
+          <text>Implementing service tests on a multi-container application</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713698"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_194" playOrder="194">
+      <navLabel>
+        <text>Testing in eShopOnContainers</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713699"/>
+      <navPoint class="chapter" id="num_195" playOrder="195">
+        <navLabel>
+          <text>Additionl resources</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713700"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_196" playOrder="196">
+      <navLabel>
+        <text>Implement background tasks in microservices with IHostedService and the BackgroundService class</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713701"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_197" playOrder="197">
+      <navLabel>
+        <text>Registering hosted services in your WebHost or Host</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713702"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_198" playOrder="198">
+      <navLabel>
+        <text>The IHostedService interface</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713703"/>
+      <navPoint class="chapter" id="num_199" playOrder="199">
+        <navLabel>
+          <text>Summary class diagram</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713705"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_200" playOrder="200">
+        <navLabel>
+          <text>Deployment considerations and takeaways</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713706"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_201" playOrder="201">
+      <navLabel>
+        <text>Implement API Gateways with Ocelot</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713707"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_202" playOrder="202">
+      <navLabel>
+        <text>Architect and design your API Gateways</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713708"/>
+      <navPoint class="chapter" id="num_203" playOrder="203">
+        <navLabel>
+          <text>Sample microservices/containers to re-route through the API Gateways</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713709"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_204" playOrder="204">
+      <navLabel>
+        <text>Implementing your API Gateways with Ocelot</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713710"/>
+      <navPoint class="chapter" id="num_205" playOrder="205">
+        <navLabel>
+          <text>Using a single Docker container image to run multiple different API Gateway / BFF container types</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713711"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_206" playOrder="206">
+        <navLabel>
+          <text>The Gateway aggregation pattern in eShopOnContainers</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713712"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_207" playOrder="207">
+        <navLabel>
+          <text>Authentication and authorization in Ocelot API Gateways</text>
+        </navLabel>
+        <content src="index_split_009.html#id_Toc534713713"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_208" playOrder="208">
+      <navLabel>
+        <text>Using Kubernetes Ingress plus Ocelot API Gateways</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713714"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_209" playOrder="209">
+      <navLabel>
+        <text>Additional cross-cutting features in an Ocelot API Gateway</text>
+      </navLabel>
+      <content src="index_split_009.html#id_Toc534713715"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_210" playOrder="210">
+      <navLabel>
+        <text>Tackle Business Complexity in a Microservice with DDD and CQRS Patterns</text>
+      </navLabel>
+      <content src="index_split_010.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_211" playOrder="211">
+      <navLabel>
+        <text>Apply simplified CQRS and DDD patterns in a microservice</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713717"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_212" playOrder="212">
+      <navLabel>
+        <text>Apply CQRS and CQS approaches in a DDD microservice in eShopOnContainers</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713718"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_213" playOrder="213">
+      <navLabel>
+        <text>CQRS and DDD patterns are not top-level architectures</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713719"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_214" playOrder="214">
+      <navLabel>
+        <text>Implement reads/queries in a CQRS microservice</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713720"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_215" playOrder="215">
+      <navLabel>
+        <text>Use ViewModels specifically made for client apps, independent from domain model constraints</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713721"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_216" playOrder="216">
+      <navLabel>
+        <text>Use Dapper as a micro ORM to perform queries</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713722"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_217" playOrder="217">
+      <navLabel>
+        <text>Dynamic versus static ViewModels</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713723"/>
+      <navPoint class="chapter" id="num_218" playOrder="218">
+        <navLabel>
+          <text>ViewModel as dynamic type</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713724"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_219" playOrder="219">
+        <navLabel>
+          <text>ViewModel as predefined DTO classes</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713725"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_220" playOrder="220">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713726"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_221" playOrder="221">
+      <navLabel>
+        <text>Design a DDD-oriented microservice</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713727"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_222" playOrder="222">
+      <navLabel>
+        <text>Keep the microservice context boundaries relatively small</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713728"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_223" playOrder="223">
+      <navLabel>
+        <text>Layers in DDD microservices</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713729"/>
+      <navPoint class="chapter" id="num_224" playOrder="224">
+        <navLabel>
+          <text>The domain model layer</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713730"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_225" playOrder="225">
+        <navLabel>
+          <text>The application layer</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713731"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_226" playOrder="226">
+        <navLabel>
+          <text>The infrastructure layer</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713732"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_227" playOrder="227">
+      <navLabel>
+        <text>Design a microservice domain model</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713733"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_228" playOrder="228">
+      <navLabel>
+        <text>The Domain Entity pattern</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713734"/>
+      <navPoint class="chapter" id="num_229" playOrder="229">
+        <navLabel>
+          <text>Rich domain model versus anemic domain model</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713735"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_230" playOrder="230">
+        <navLabel>
+          <text>The Value Object pattern</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713736"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_231" playOrder="231">
+        <navLabel>
+          <text>The Aggregate pattern</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713737"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_232" playOrder="232">
+        <navLabel>
+          <text>The Aggregate Root or Root Entity pattern</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713738"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_233" playOrder="233">
+      <navLabel>
+        <text>Implement a microservice domain model with .NET Core</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713739"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_234" playOrder="234">
+      <navLabel>
+        <text>Domain model structure in a custom .NET Standard Library</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713740"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_235" playOrder="235">
+      <navLabel>
+        <text>Structure aggregates in a custom .NET Standard library</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713741"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_236" playOrder="236">
+      <navLabel>
+        <text>Implement domain entities as POCO classes</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713742"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_237" playOrder="237">
+      <navLabel>
+        <text>Encapsulate data in the Domain Entities</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713743"/>
+      <navPoint class="chapter" id="num_238" playOrder="238">
+        <navLabel>
+          <text>Map properties with only get accessors to the fields in the database table</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713744"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_239" playOrder="239">
+        <navLabel>
+          <text>Map fields without properties</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713745"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_240" playOrder="240">
+        <navLabel>
+          <text>Additional resources</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713746"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_241" playOrder="241">
+      <navLabel>
+        <text>Seedwork (reusable base classes and interfaces for your domain model)</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713747"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_242" playOrder="242">
+      <navLabel>
+        <text>The custom Entity base class</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713748"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_243" playOrder="243">
+      <navLabel>
+        <text>Repository contracts (interfaces) in the domain model layer</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713749"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_244" playOrder="244">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713750"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_245" playOrder="245">
+      <navLabel>
+        <text>Implement value objects</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713751"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_246" playOrder="246">
+      <navLabel>
+        <text>Important characteristics of value objects</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713752"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_247" playOrder="247">
+      <navLabel>
+        <text>Value object implementation in C#</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713753"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_248" playOrder="248">
+      <navLabel>
+        <text>How to persist value objects in the database with EF Core 2.0</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713754"/>
+      <navPoint class="chapter" id="num_249" playOrder="249">
+        <navLabel>
+          <text>Background and older approaches using EF Core 1.1</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713755"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_250" playOrder="250">
+      <navLabel>
+        <text>Persist value objects as owned entity types in EF Core 2.0</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713756"/>
+      <navPoint class="chapter" id="num_251" playOrder="251">
+        <navLabel>
+          <text>Additional details on owned entity types</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713757"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_252" playOrder="252">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713758"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_253" playOrder="253">
+      <navLabel>
+        <text>Use enumeration classes instead of enum types</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713759"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_254" playOrder="254">
+      <navLabel>
+        <text>Implement an Enumeration base class</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713760"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_255" playOrder="255">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713761"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_256" playOrder="256">
+      <navLabel>
+        <text>Design validations in the domain model layer</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713762"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_257" playOrder="257">
+      <navLabel>
+        <text>Implement validations in the domain model layer</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713763"/>
+      <navPoint class="chapter" id="num_258" playOrder="258">
+        <navLabel>
+          <text>Validate conditions and throw exceptions</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713764"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_259" playOrder="259">
+        <navLabel>
+          <text>Use validation attributes in the model based on data annotations</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713765"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_260" playOrder="260">
+        <navLabel>
+          <text>Validate entities by implementing the Specification pattern and the Notification pattern</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713766"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_261" playOrder="261">
+        <navLabel>
+          <text>Use deferred validation in the domain</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713767"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_262" playOrder="262">
+        <navLabel>
+          <text>Two-step validation</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713768"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_263" playOrder="263">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713769"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_264" playOrder="264">
+      <navLabel>
+        <text>Client-side validation (validation in the presentation layers)</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713770"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_265" playOrder="265">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713771"/>
+      <navPoint class="chapter" id="num_266" playOrder="266">
+        <navLabel>
+          <text>Validation in Xamarin mobile apps</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713772"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_267" playOrder="267">
+        <navLabel>
+          <text>Validation in ASP.NET Core apps</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713773"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_268" playOrder="268">
+        <navLabel>
+          <text>Validation in SPA Web apps (Angular 2, TypeScript, JavaScript)</text>
+        </navLabel>
+        <content src="index_split_010.html#id_Toc534713774"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_269" playOrder="269">
+      <navLabel>
+        <text>Domain events: design and implementation</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713775"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_270" playOrder="270">
+      <navLabel>
+        <text>What is a domain event?</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713776"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_271" playOrder="271">
+      <navLabel>
+        <text>Domain events versus integration events</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713777"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_272" playOrder="272">
+      <navLabel>
+        <text>Domain events as a preferred way to trigger side effects across multiple aggregates within the same domain</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713778"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_273" playOrder="273">
+      <navLabel>
+        <text>Implement domain events</text>
+      </navLabel>
+      <content src="index_split_010.html#id_Toc534713779"/>
+      <navPoint class="chapter" id="num_274" playOrder="274">
+        <navLabel>
+          <text>Raise domain events</text>
+        </navLabel>
+        <content src="index_split_011.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_275" playOrder="275">
+        <navLabel>
+          <text>Single transaction across aggregates versus eventual consistency across aggregates</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713781"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_276" playOrder="276">
+        <navLabel>
+          <text>The domain event dispatcher: mapping from events to event handlers</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713782"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_277" playOrder="277">
+        <navLabel>
+          <text>How to subscribe to domain events</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713783"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_278" playOrder="278">
+        <navLabel>
+          <text>How to handle domain events</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713784"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_279" playOrder="279">
+      <navLabel>
+        <text>Conclusions on domain events</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713785"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_280" playOrder="280">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713786"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_281" playOrder="281">
+      <navLabel>
+        <text>Design the infrastructure persistence layer</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713787"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_282" playOrder="282">
+      <navLabel>
+        <text>The Repository pattern</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713788"/>
+      <navPoint class="chapter" id="num_283" playOrder="283">
+        <navLabel>
+          <text>Define one repository per aggregate</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713789"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_284" playOrder="284">
+        <navLabel>
+          <text>Enforce one aggregate root per repository</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713790"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_285" playOrder="285">
+        <navLabel>
+          <text>The Repository pattern makes it easier to test your application logic</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713791"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_286" playOrder="286">
+        <navLabel>
+          <text>The difference between the Repository pattern and the legacy Data Access class (DAL class) pattern</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713792"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_287" playOrder="287">
+        <navLabel>
+          <text>Repositories shouldn’t be mandatory</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713793"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_288" playOrder="288">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713794"/>
+      <navPoint class="chapter" id="num_289" playOrder="289">
+        <navLabel>
+          <text>Repository pattern</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713795"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_290" playOrder="290">
+        <navLabel>
+          <text>Unit of Work pattern</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713796"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_291" playOrder="291">
+      <navLabel>
+        <text>Implement the infrastructure persistence layer with Entity Framework Core</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713797"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_292" playOrder="292">
+      <navLabel>
+        <text>Introduction to Entity Framework Core</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713798"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_293" playOrder="293">
+      <navLabel>
+        <text>Infrastructure in Entity Framework Core from a DDD perspective</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713799"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_294" playOrder="294">
+      <navLabel>
+        <text>Implement custom repositories with Entity Framework Core</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713800"/>
+      <navPoint class="chapter" id="num_295" playOrder="295">
+        <navLabel>
+          <text>Methods to implement in a repository (updates or transactions versus queries)</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713801"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_296" playOrder="296">
+        <navLabel>
+          <text>Using a custom repository versus using EF DbContext directly</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713802"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_297" playOrder="297">
+      <navLabel>
+        <text>EF DbContext and IUnitOfWork instance lifetime in your IoC container</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713803"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_298" playOrder="298">
+      <navLabel>
+        <text>The repository instance lifetime in your IoC container</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713804"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_299" playOrder="299">
+      <navLabel>
+        <text>Table mapping</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713805"/>
+      <navPoint class="chapter" id="num_300" playOrder="300">
+        <navLabel>
+          <text>Data Annotations versus Fluent API</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713806"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_301" playOrder="301">
+        <navLabel>
+          <text>Fluent API and the OnModelCreating method</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713807"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_302" playOrder="302">
+        <navLabel>
+          <text>The Hi/Lo algorithm in EF Core</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713808"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_303" playOrder="303">
+        <navLabel>
+          <text>Map fields instead of properties</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713809"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_304" playOrder="304">
+        <navLabel>
+          <text>Use shadow properties in EF Core, hidden at the infrastructure level</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713810"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_305" playOrder="305">
+      <navLabel>
+        <text>Implement the Query Specification pattern</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713811"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_306" playOrder="306">
+      <navLabel>
+        <text>Use NoSQL databases as a persistence infrastructure</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713812"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_307" playOrder="307">
+      <navLabel>
+        <text>Introduction to Azure Cosmos DB and the native Cosmos DB API</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713813"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_308" playOrder="308">
+      <navLabel>
+        <text>Implement .NET code targeting MongoDB and Azure Cosmos DB</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713814"/>
+      <navPoint class="chapter" id="num_309" playOrder="309">
+        <navLabel>
+          <text>Use Azure Cosmos DB from .NET containers</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713815"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_310" playOrder="310">
+        <navLabel>
+          <text>Use MongoDB API for local dev/test Linux/Windows containers plus Azure Cosmos DB</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713816"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_311" playOrder="311">
+        <navLabel>
+          <text>Analyze your approach for production applications: MongoDB API vs. Cosmos DB API</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713817"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_312" playOrder="312">
+        <navLabel>
+          <text>The code: Use MongoDB API in .NET Core applications</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713818"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_313" playOrder="313">
+      <navLabel>
+        <text>Design the microservice application layer and Web API</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713819"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_314" playOrder="314">
+      <navLabel>
+        <text>Use SOLID principles and Dependency Injection</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713820"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_315" playOrder="315">
+      <navLabel>
+        <text>Implement the microservice application layer using the Web API</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713821"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_316" playOrder="316">
+      <navLabel>
+        <text>Use Dependency Injection to inject infrastructure objects into your application layer</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713822"/>
+      <navPoint class="chapter" id="num_317" playOrder="317">
+        <navLabel>
+          <text>Register the dependency implementation types and interfaces or abstractions</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713823"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_318" playOrder="318">
+      <navLabel>
+        <text>Implement the Command and Command Handler patterns</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713824"/>
+      <navPoint class="chapter" id="num_319" playOrder="319">
+        <navLabel>
+          <text>The command class</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713825"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_320" playOrder="320">
+        <navLabel>
+          <text>The Command Handler class</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713826"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_321" playOrder="321">
+      <navLabel>
+        <text>The Command process pipeline: how to trigger a command handler</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713827"/>
+      <navPoint class="chapter" id="num_322" playOrder="322">
+        <navLabel>
+          <text>Use the Mediator pattern (in-memory) in the command pipeline</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713828"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_323" playOrder="323">
+        <navLabel>
+          <text>Use message queues (out-of-proc) in the command’s pipeline</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713829"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_324" playOrder="324">
+      <navLabel>
+        <text>Implement the command process pipeline with a mediator pattern (MediatR)</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713830"/>
+      <navPoint class="chapter" id="num_325" playOrder="325">
+        <navLabel>
+          <text>Implement idempotent Commands</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713831"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_326" playOrder="326">
+        <navLabel>
+          <text>Register the types used by MediatR</text>
+        </navLabel>
+        <content src="index_split_011.html#id_Toc534713832"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_327" playOrder="327">
+      <navLabel>
+        <text>Apply cross-cutting concerns when processing commands with the Behaviors in MediatR</text>
+      </navLabel>
+      <content src="index_split_011.html#id_Toc534713833"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_328" playOrder="328">
+      <navLabel>
+        <text>Implement Resilient Applications</text>
+      </navLabel>
+      <content src="index_split_012.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_329" playOrder="329">
+      <navLabel>
+        <text>Handle partial failure</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713835"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_330" playOrder="330">
+      <navLabel>
+        <text>Strategies to handle partial failure</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713836"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_331" playOrder="331">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713837"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_332" playOrder="332">
+      <navLabel>
+        <text>Implement retries with exponential backoff</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713838"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_333" playOrder="333">
+      <navLabel>
+        <text>Implement resilient Entity Framework Core SQL connections</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713839"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_334" playOrder="334">
+      <navLabel>
+        <text>Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713840"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_335" playOrder="335">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713841"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_336" playOrder="336">
+      <navLabel>
+        <text>Explore custom HTTP call retries with exponential backoff</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713842"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_337" playOrder="337">
+      <navLabel>
+        <text>Use HttpClientFactory to implement resilient HTTP requests</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713843"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_338" playOrder="338">
+      <navLabel>
+        <text>Issues with the original HttpClient class available in .NET Core</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713844"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_339" playOrder="339">
+      <navLabel>
+        <text>What is HttpClientFactory</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713845"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_340" playOrder="340">
+      <navLabel>
+        <text>Multiple ways to use HttpClientFactory</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713846"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_341" playOrder="341">
+      <navLabel>
+        <text>How to use Typed Clients with HttpClientFactory</text>
+      </navLabel>
+      <content src="index_split_012.html#id_Toc534713847"/>
+      <navPoint class="chapter" id="num_342" playOrder="342">
+        <navLabel>
+          <text>HttpClient lifetimes</text>
+        </navLabel>
+        <content src="index_split_012.html#id_Toc534713848"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_343" playOrder="343">
+        <navLabel>
+          <text>Implement your Typed Client classes that use the injected and configured HttpClient</text>
+        </navLabel>
+        <content src="index_split_012.html#id_Toc534713849"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_344" playOrder="344">
+        <navLabel>
+          <text>Use your Typed Client classes</text>
+        </navLabel>
+        <content src="index_split_013.html#id_Toc534713850"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_345" playOrder="345">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_013.html#id_Toc534713851"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_346" playOrder="346">
+      <navLabel>
+        <text>Implement HTTP call retries with exponential backoff with HttpClientFactory and Polly policies</text>
+      </navLabel>
+      <content src="index_split_013.html#id_Toc534713852"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_347" playOrder="347">
+      <navLabel>
+        <text>Add a jitter strategy to the retry policy</text>
+      </navLabel>
+      <content src="index_split_013.html#id_Toc534713853"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_348" playOrder="348">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_013.html#id_Toc534713854"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_349" playOrder="349">
+      <navLabel>
+        <text>Implement the Circuit Breaker pattern</text>
+      </navLabel>
+      <content src="index_split_013.html#id_Toc534713855"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_350" playOrder="350">
+      <navLabel>
+        <text>Implement Circuit Breaker pattern with HttpClientFactory and Polly</text>
+      </navLabel>
+      <content src="index_split_013.html#id_Toc534713856"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_351" playOrder="351">
+      <navLabel>
+        <text>Test Http retries and circuit breakers in eShopOnContainers</text>
+      </navLabel>
+      <content src="index_split_013.html#id_Toc534713857"/>
+      <navPoint class="chapter" id="num_352" playOrder="352">
+        <navLabel>
+          <text>Test the circuit breaker in eShopOnContainers</text>
+        </navLabel>
+        <content src="index_split_013.html#id_Toc534713858"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_353" playOrder="353">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_014.html#id_Toc534713859"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_354" playOrder="354">
+      <navLabel>
+        <text>Health monitoring</text>
+      </navLabel>
+      <content src="index_split_014.html#id_Toc534713860"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_355" playOrder="355">
+      <navLabel>
+        <text>Implement health checks in ASP.NET Core services</text>
+      </navLabel>
+      <content src="index_split_014.html#id_Toc534713861"/>
+      <navPoint class="chapter" id="num_356" playOrder="356">
+        <navLabel>
+          <text>Use the HealthChecks feature in your back-end ASP.NET microservices</text>
+        </navLabel>
+        <content src="index_split_014.html#id_Toc534713862"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_357" playOrder="357">
+        <navLabel>
+          <text>HealthChecks implementation in eShopOnContainers</text>
+        </navLabel>
+        <content src="index_split_014.html#id_Toc534713863"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_358" playOrder="358">
+        <navLabel>
+          <text>Query your microservices to report about their health status</text>
+        </navLabel>
+        <content src="index_split_014.html#id_Toc534713864"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_359" playOrder="359">
+      <navLabel>
+        <text>Use watchdogs</text>
+      </navLabel>
+      <content src="index_split_014.html#id_Toc534713865"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_360" playOrder="360">
+      <navLabel>
+        <text>Health checks when using orchestrators</text>
+      </navLabel>
+      <content src="index_split_014.html#id_Toc534713866"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_361" playOrder="361">
+      <navLabel>
+        <text>Advanced monitoring: visualization, analysis, and alerts</text>
+      </navLabel>
+      <content src="index_split_014.html#id_Toc534713867"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_362" playOrder="362">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_014.html#id_Toc534713868"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_363" playOrder="363">
+      <navLabel>
+        <text>Make secure .NET Microservices and Web Applications</text>
+      </navLabel>
+      <content src="index_split_015.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_364" playOrder="364">
+      <navLabel>
+        <text>Implement authentication in .NET microservices and web applications</text>
+      </navLabel>
+      <content src="index_split_015.html#id_Toc534713870"/>
+      <navPoint class="chapter" id="num_365" playOrder="365">
+        <navLabel>
+          <text>Authenticate with ASP.NET Core Identity</text>
+        </navLabel>
+        <content src="index_split_015.html#id_Toc534713871"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_366" playOrder="366">
+        <navLabel>
+          <text>Authenticate with external providers</text>
+        </navLabel>
+        <content src="index_split_015.html#id_Toc534713872"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_367" playOrder="367">
+        <navLabel>
+          <text>Authenticate with bearer tokens</text>
+        </navLabel>
+        <content src="index_split_015.html#id_Toc534713873"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_368" playOrder="368">
+        <navLabel>
+          <text>Authenticate with an OpenID Connect or OAuth 2.0 Identity provider</text>
+        </navLabel>
+        <content src="index_split_015.html#id_Toc534713874"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_369" playOrder="369">
+        <navLabel>
+          <text>Issue security tokens from an ASP.NET Core service</text>
+        </navLabel>
+        <content src="index_split_015.html#id_Toc534713875"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_370" playOrder="370">
+        <navLabel>
+          <text>Consume security tokens</text>
+        </navLabel>
+        <content src="index_split_015.html#id_Toc534713876"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_371" playOrder="371">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_015.html#id_Toc534713877"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_372" playOrder="372">
+      <navLabel>
+        <text>About authorization in .NET microservices and web applications</text>
+      </navLabel>
+      <content src="index_split_015.html#id_Toc534713878"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_373" playOrder="373">
+      <navLabel>
+        <text>Implement role-based authorization</text>
+      </navLabel>
+      <content src="index_split_015.html#id_Toc534713879"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_374" playOrder="374">
+      <navLabel>
+        <text>Implement policy-based authorization</text>
+      </navLabel>
+      <content src="index_split_015.html#id_Toc534713880"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_375" playOrder="375">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_015.html#id_Toc534713881"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_376" playOrder="376">
+      <navLabel>
+        <text>Store application secrets safely during development</text>
+      </navLabel>
+      <content src="index_split_015.html#id_Toc534713882"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_377" playOrder="377">
+      <navLabel>
+        <text>Store secrets in environment variables</text>
+      </navLabel>
+      <content src="index_split_015.html#id_Toc534713883"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_378" playOrder="378">
+      <navLabel>
+        <text>Store secrets with the ASP.NET Core Secret Manager</text>
+      </navLabel>
+      <content src="index_split_015.html#id_Toc534713884"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_379" playOrder="379">
+      <navLabel>
+        <text>Use Azure Key Vault to protect secrets at production time</text>
+      </navLabel>
+      <content src="index_split_015.html#id_Toc534713885"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_380" playOrder="380">
+      <navLabel>
+        <text>Additional resources</text>
+      </navLabel>
+      <content src="index_split_015.html#id_Toc534713886"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_381" playOrder="381">
+      <navLabel>
+        <text>Key Takeaways</text>
+      </navLabel>
+      <content src="index_split_016.html"/>
+    </navPoint>
+  </navMap>
+</ncx>
